@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    display: flex;
+    justify-content: center; 
+    height: 100vh;           
+}
+
+
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1397px;  
+    height: 50px;                   
+    background-color: #f8f8f8;   
+    border-bottom: 1px solid #2D2D2D; 
+    
+    .socials-buttons li a{
+        margin-right: 20px;
+    }
+        
+    .pages-buttons li a{
+        margin-right: 20px;
+    }
+}
+
+/* Styling each list */
+#main-nav ul {
+    display: flex;
+    list-style: none;               
+    margin: 0;
+    padding: 0;
+
+    li {
+        margin: 0;                 
+    }
+
+    a {
+        text-decoration: none;          
+        color: #2D2D2D;                    
+        font-size: 18px;                
+    }
+
+    a:hover {
+        color: #007BFF;                
+    }
+}
