@@ -4,10 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/navigation-bar.css">
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div id="app">
+      <nav id="main-nav" class="topbar">
+        <a href="/" onclick="route()">Home</a>
+        <a href="/projects" onclick="route()">Projects</a>
+        <a href="/about-me" onclick="route()">About me</a>
+        <a href="/instagram" onclick="route()">Instagram</a>
+        <a href="/linkedin" onclick="route()">LinkedIn</a>
+      </nav>
+    </div>
+
+    <script src="js/router.js"></script>
   </body>
 </html>
