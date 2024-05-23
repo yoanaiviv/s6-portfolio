@@ -2,51 +2,59 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #F8F8F8;
+    overflow: hidden;
+    border: 1px solid red;
 }
 
 #app {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center; 
     height: 100vh;           
 }
 
-
+/*Menu styles*/
 #main-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1397px;  
-    height: 50px;                   
+    width: 90%;  
+    height: 5%;                   
     background-color: #f8f8f8;   
     border-bottom: 1px solid #2D2D2D; 
-    
-    .socials-buttons li a{
-        margin-right: 20px;
+
+    a {
+        text-decoration: none;
+        color: #2D2D2D;
     }
-        
-    .pages-buttons li a{
-        margin-right: 20px;
+
+    .home-buttons {
+        width: 33%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .pages-buttons {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+
+        a {margin: 0 10px 0 10px;}
+    }
+    
+    .socials-buttons {
+        width: 33%;
+        display: flex;
+        justify-content: flex-end;
+
+        a {margin-left: 20px;}
     }
 }
 
-/* Styling each list */
-#main-nav ul {
-    display: flex;
-    list-style: none;               
-    margin: 0;
-    padding: 0;
-
-    li {
-        margin: 0;                 
-    }
-
-    a {
-        text-decoration: none;          
-        color: #2D2D2D;                    
-        font-size: 18px;                
-    }
-
-    a:hover {
-        color: #007BFF;                
-    }
+/*Body styles*/
+#main-page {
+    height: 95%;
+    width: 90%;
 }

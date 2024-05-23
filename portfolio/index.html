@@ -5,23 +5,34 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/navigation-bar.css">
+    <link rel="stylesheet" href="./css/body-container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
       <nav id="main-nav" class="top-bar">
-        <ul class="home-icon-buttons">
-        <li><a href="/" onclick="route()">Home</a></li>
-        </ul>
-        <ul class="pages-buttons">
-        <li><a href="/projects" onclick="route()">Projects</a></li>
-        <li><a href="/about-me" onclick="route()">About me</a></li>
-        </ul>
-        <ul class="socials-buttons">
-        <li><a href="/instagram" onclick="route()">Instagram</a></li>
-        <li><a href="/linkedin" onclick="route()">LinkedIn</a></li>
-        </ul>
+        <div class="home-buttons">
+        <a href="/" onclick="route()">Home</a>
+        </div>
+
+        <div class="pages-buttons">
+        <a href="/projects" onclick="route()">Projects</a>
+        <a href="/about-me" onclick="route()">About me</a>
+        </div>
+
+        <div class="socials-buttons">
+        <a href="/instagram" onclick="route()">Instagram</a>
+        <a href="/linkedin" onclick="route()">LinkedIn</a>
+        </div>
       </nav>
+
+      <div id="main-page"></div>
     </div>
 
     <script src="js/router.js"></script>

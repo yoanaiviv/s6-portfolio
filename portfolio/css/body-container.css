@@ -1,0 +1,126 @@
+#home-page-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+
+    nav {
+        width: 50%;
+    }
+}
+
+/*Setting Variables*/
+h1 {
+    font-size: 90.5px;
+    font-weight: 100;
+    font-family: "Abril Fatface", serif;
+    color: #2D2D2D;
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 100;
+    font-family: "Abril Fatface", serif;
+    color: #2D2D2D;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: "Abril Fatface", serif;
+    color: #2D2D2D;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #2D2D2D;
+}
+
+/*Background text effect*/
+
+bg {
+    display: inline-block;
+    width: auto;
+    position: relative;
+    z-index: 1;
+}
+
+bg::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Adjust this value to move the background higher */
+    left: 0;
+    right: 0;
+    height: 70%; /* Adjust this value to control the height of the background */
+    background: #F7E96A;
+    z-index: -1;
+  }
+
+
+
+/*Conent Home Page Text*/
+.home-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .title {
+        margin-bottom: 40px;
+
+        .title-two {
+            margin-left: 50px;
+        }
+    }
+
+    .paragraph {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+        p {
+            width: 50%;
+            text-align: center;
+        }
+    }
+
+    .location {
+        margin-bottom: 40px;
+        p {
+            color: #777777;
+        }
+    }
+
+    .information {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .experience {
+            margin-right: 40px;
+        }
+    }
+}
+
+.home-page-photos {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+
+    .box {
+        height: 300px;
+        width: 90%;
+        background-color: #F5D5ED;
+    }
+
+    #home-photo {
+        position: fixed;
+        top: -30%;
+        left: 11%;
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+}
