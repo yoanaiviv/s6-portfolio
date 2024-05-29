@@ -28,6 +28,7 @@
     a {
         text-decoration: none;
         color: #2D2D2D;
+        z-index: 1;
     }
 
     .home-buttons {
@@ -55,6 +56,18 @@
 
 /*Body styles*/
 #main-page {
-    height: 95%;
+    height: 90%;
     width: 90%;
+}
+
+footer {
+    height: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    color: #777777;
+    border-top: 1px solid #2D2D2D; 
+    z-index: 1;
 }
