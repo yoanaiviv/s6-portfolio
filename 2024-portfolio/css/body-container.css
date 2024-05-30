@@ -162,8 +162,8 @@ bg::before {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 20px;
         border-bottom: 1px solid #2D2D2D; 
-        margin-bottom: 20px;
 
         h3 {
             display: flex;
@@ -183,6 +183,55 @@ bg::before {
             flex: 33%;
             justify-content: end;
             text-decoration: none;
+        }
+    }
+}
+
+/*Pavemind*/
+
+#project-pavemind-page-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .logo {
+        height: 30%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #2D2D2D; 
+
+        img {
+            height: 160px;
+            width: auto;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        height: 70%;
+
+        .text {
+            flex: 60%;
+
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .button {
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            flex: 40%;
         }
     }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/navigation-bar.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/body-container.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,6 +15,18 @@
     <title>Vite App</title>
   </head>
   <body>
+    <div class="background-image" data-select="image" data-id="1">
+      <img src="/assets/img/one.jpg">
+    </div>
+    <div class="background-image" data-select="image" data-id="1">
+      <img src="/assets/img/two.jpg">
+    </div>
+    <div class="background-image" data-select="image" data-id="1">
+      <img src="/assets/img/three.jpg">
+    </div>
+    <div class="background-image" data-select="image" data-id="1">
+      <img src="/assets/img/four.jpg">
+    </div>
     <div id="app">
       <nav id="main-nav" class="top-bar">
         <div class="home-buttons">
@@ -38,5 +50,6 @@
     </div>
 
     <script src="js/router.js"></script>
+    <script type="module" src="/js/image-hover.js"></script>
   </body>
 </html>
