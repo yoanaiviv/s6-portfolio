@@ -189,7 +189,7 @@ bg::before {
 
 /*Pavemind*/
 
-#project-pavemind-page-container {
+#project-page-container {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -199,11 +199,23 @@ bg::before {
         height: 30%;
         padding: 10px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         border-bottom: 1px solid #2D2D2D; 
 
-        img {
+        .back {
+            display: flex;
+            justify-content: start;
+            width: 100%;
+
+            img {
+                height: 30px;
+                width: auto;
+            }
+        }
+
+        .logo-img {
             height: 160px;
             width: auto;
         }

@@ -10,6 +10,9 @@ const routes = {
     "/": "/pages/home.html",
     "/projects": "/pages/projects.html",
     "/pavemind": "/pages/project-pavemind.html",
+    "/bluecollar": "/pages/project-bluecollar.html",
+    "/maaike": "/pages/project-maaike.html",
+    "/geographix": "/pages/project-geographix.html"
 };
 
 const handleLocation = async () => {
