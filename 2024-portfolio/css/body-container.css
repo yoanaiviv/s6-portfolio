@@ -187,7 +187,7 @@ bg::before {
     }
 }
 
-/*Pavemind*/
+/*Project page*/
 
 #project-page-container {
     display: flex;
@@ -196,7 +196,7 @@ bg::before {
     width: 100%;
 
     .logo {
-        height: 30%;
+        height: 40%;
         padding: 10px;
         display: flex;
         flex-direction: column;
@@ -224,7 +224,7 @@ bg::before {
     .content {
         display: flex;
         flex-direction: row;
-        height: 70%;
+        height: 60%;
 
         .text {
             flex: 60%;
@@ -244,6 +244,60 @@ bg::before {
             justify-content: end;
             align-items: end;
             flex: 40%;
+        }
+    }
+}
+
+/*About me page*/
+
+#project-page-container {
+    display: flex;
+    flex-direction: column;
+
+    .video {
+        flex: 40%;
+        border-bottom: 1px solid #2D2D2D; 
+    }
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        flex: 60%;
+
+        .about-text {
+            flex: 60%;
+
+            h2 {
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            p {
+                margin-bottom: 20px;
+            }
+        }
+
+        .about-photo {
+            display: flex;
+            flex-direction: row;
+            flex: 40%;
+            justify-content: end;
+            align-items: center;
+
+            .box {
+                position: relative;
+                background-color: #F5D5ED;
+                width: 300px;
+                height: 200px;
+            }
+
+            img {
+                position: absolute;
+                height: 400px;
+                width: auto;
+                margin-right: 20px;
+                background-color: transparent;
+            }
         }
     }
 }

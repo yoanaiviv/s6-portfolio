@@ -12,7 +12,8 @@ const routes = {
     "/pavemind": "/pages/project-pavemind.html",
     "/bluecollar": "/pages/project-bluecollar.html",
     "/maaike": "/pages/project-maaike.html",
-    "/geographix": "/pages/project-geographix.html"
+    "/geographix": "/pages/project-geographix.html",
+    "/about": "/pages/about.html"
 };
 
 const handleLocation = async () => {
