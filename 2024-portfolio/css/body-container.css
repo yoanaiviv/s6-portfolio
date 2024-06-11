@@ -45,6 +45,7 @@ button {
     padding: 10px;
     font-family: "Lato", sans-serif;
     font-size: 16px;
+    background-color: #f8f8f8;
     color: #2D2D2D;
     z-index: 1;
 
@@ -301,3 +302,4 @@ bg::before {
         }
     }
 }
+

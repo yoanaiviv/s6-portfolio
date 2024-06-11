@@ -1,16 +1,58 @@
-<div id="project-page-container">
-    <div class="video">WIll be video one day (hopefully in a week or so)</div>
-    <div class="content">
-        <nav class="about-text">
-            <h2>Hi there, I'm Yoana!</h2>
-            <p>I'm a <bg>passionate designer</bg> with a love for vibrant and innovative designs, especially when it comes to sneakers. Currently, I'm immersed in the world of <bg>ICT Media Design</bg>, specializing in UX/UI. My journey doesn't stop there – I'm also gaining experience as a <bg>part-time UX/UI designer</bg> at Sogelink.</p>
-            <p>My expertise extends to front-end development, where I use <bg>HTML5, CSS, and JavaScript</bg> (particularly Angular) to craft seamless user experiences. I thrive on challenges and approach each project with a blend of diligence and creativity. Whether it's brainstorming a new concept or refining an existing design, I'm always eager to push the boundaries and deliver solutions that captivate and delight users.</p>
-            <p>When I'm not busy crafting digital experiences, you can find me <bg>exploring the intersection of technology and art</bg>, seeking inspiration in the world around me. Feel free to explore my portfolio and get in touch – I'm always up for new collaborations and opportunities to bring exciting ideas to life.</p>
-        </nav>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/body-container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav id="main-nav" class="top-bar">
+        <div class="home-buttons">
+        <a href="/index.html" onclick="route()">Home</a>
+        </div>
 
-        <nav class="about-photo">
-            <div class="box"></div>
-            <img src="/assets/img/photo-home.png" alt="">
-        </nav>
+        <div class="pages-buttons">
+        <a href="/pages/projects.html" onclick="route()">Projects</a>
+        <a href="/#" onclick="route()">About me</a>
+        </div>
+
+        <div class="socials-buttons">
+        <a href="/instagram" onclick="route()">Instagram</a>
+        <a href="/linkedin" onclick="route()">LinkedIn</a>
+        </div>
+      </nav>
+
+      <div id="main-page">
+        <div id="project-page-container">
+            <div class="video">WIll be video one day (hopefully in a week or so)</div>
+            <div class="content">
+                <nav class="about-text">
+                    <h2>Hi there, I'm Yoana!</h2>
+                    <p>I'm a <bg>passionate designer</bg> with a love for vibrant and innovative designs, especially when it comes to sneakers. Currently, I'm immersed in the world of <bg>ICT Media Design</bg>, specializing in UX/UI. My journey doesn't stop there – I'm also gaining experience as a <bg>part-time UX/UI designer</bg> at Sogelink.</p>
+                    <p>My expertise extends to front-end development, where I use <bg>HTML5, CSS, and JavaScript</bg> (particularly Angular) to craft seamless user experiences. I thrive on challenges and approach each project with a blend of diligence and creativity. Whether it's brainstorming a new concept or refining an existing design, I'm always eager to push the boundaries and deliver solutions that captivate and delight users.</p>
+                    <p>When I'm not busy crafting digital experiences, you can find me <bg>exploring the intersection of technology and art</bg>, seeking inspiration in the world around me. Feel free to explore my portfolio and get in touch – I'm always up for new collaborations and opportunities to bring exciting ideas to life.</p>
+                </nav>
+        
+                <nav class="about-photo">
+                    <div class="box"></div>
+                    <img src="/assets/img/photo-home.png" alt="">
+                </nav>
+            </div>
+        </div>
+      </div>
+
+      <footer>Designing dreams, one pixel at a time.</footer>
     </div>
-</div>
+
+  </body>
+</html>

@@ -1,27 +1,80 @@
-<div id="projects-page-container">
-    <div class="projects-box" data-select="project">
-        <h3><bg>Pavemind</bg></h3>
-        <p>UX/UI Designer / Front-end Developer</p>
-        <a href="/pavemind"><button>Open project <img src="/assets/img/arrow.png"></button></a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/body-container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="/js/image-hover.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="background-image" data-select="image" data-id="1">
+      <img src="/assets/img/one.jpg">
+    </div>
+    <div class="background-image" data-select="image" data-id="2">
+      <img src="/assets/img/two.jpg">
+    </div>
+    <div class="background-image" data-select="image" data-id="3">
+      <img src="/assets/img/three.jpg">
+    </div>
+    <div class="background-image" data-select="image" data-id="4">
+      <img src="/assets/img/four.jpg">
+    </div>
+    <div id="app">
+      <nav id="main-nav" class="top-bar">
+        <div class="home-buttons">
+        <a href="/index.html" onclick="route()">Home</a>
+        </div>
+
+        <div class="pages-buttons">
+        <a href="#" onclick="route()">Projects</a>
+        <a href="/pages/about.html" onclick="route()">About me</a>
+        </div>
+
+        <div class="socials-buttons">
+        <a href="/instagram" onclick="route()">Instagram</a>
+        <a href="/linkedin" onclick="route()">LinkedIn</a>
+        </div>
+      </nav>
+
+      <div id="main-page">
+        <div id="projects-page-container">
+            <div class="projects-box" data-select="project" data-id="1">
+                <h3><bg>Pavemind</bg></h3>
+                <p>UX/UI Designer / Front-end Developer</p>
+                <a href="/pages/project-pavemind.html"><button>Open project <img src="/assets/img/arrow.png"></button></a>
+            </div>
+        
+            <div class="projects-box" data-select="project" data-id="2">
+                <h3><bg>BlueCollar</bg></h3>
+                <p>UX/UI Designer</p>
+                <a href="/pages/project-bluecollar.html"><button>Open project <img src="/assets/img/arrow.png"></button></a>
+            </div>
+        
+            <div class="projects-box" data-select="project" data-id="3">
+                <h3><bg>Maaike Girardin</bg></h3>
+                <p>UX/UI Designer / Front-end Developer</p>
+                <a href="/pages/project-maaike.html"><button>Open project <img src="/assets/img/arrow.png"></button></a>
+            </div>
+        
+            <div class="projects-box" data-select="project" data-id="4">
+                <h3><bg>GeoGraphix</bg></h3>
+                <p>UX/UI Designer / Front-end Developer</p>
+                <a href="/pages/project-geographix.html"><button>Open project <img src="/assets/img/arrow.png"></button></a>
+            </div>
+        </div>
+      </div>
+
+      <footer>Designing dreams, one pixel at a time.</footer>
     </div>
 
-    <div class="projects-box" data-select="project">
-        <h3><bg>BlueCollar</bg></h3>
-        <p>UX/UI Designer</p>
-        <a href="/bluecollar"><button>Open project <img src="/assets/img/arrow.png"></button></a>
-    </div>
-
-    <div class="projects-box" data-select="project">
-        <h3><bg>Maaike Girardin</bg></h3>
-        <p>UX/UI Designer / Front-end Developer</p>
-        <a href="/maaike"><button>Open project <img src="/assets/img/arrow.png"></button></a>
-    </div>
-
-    <div class="projects-box" data-select="project">
-        <h3><bg>GeoGraphix</bg></h3>
-        <p>UX/UI Designer / Front-end Developer</p>
-        <a href="/geographix"><button>Open project <img src="/assets/img/arrow.png"></button></a>
-    </div>
-</div>
-
-<script type="module" src="/js/image-hover.js"></script>
+  </body>
+</html>

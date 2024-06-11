@@ -1,18 +1,60 @@
-<div id="project-page-container">
-    <div class="logo">
-        <nav class="back">
-            <a href="/projects"><img src="/assets/img/arrow-back.png" alt=""></a>
-        </nav>
-        <img class="logo-img" src="/assets/img/bluecollar-logo.png">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/body-container.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <nav id="main-nav" class="top-bar">
+        <div class="home-buttons">
+        <a href="/index.html" onclick="route()">Home</a>
+        </div>
+
+        <div class="pages-buttons">
+        <a href="/pages/projects.html" onclick="route()">Projects</a>
+        <a href="/pages/about.html" onclick="route()">About me</a>
+        </div>
+
+        <div class="socials-buttons">
+        <a href="/instagram" onclick="route()">Instagram</a>
+        <a href="/linkedin" onclick="route()">LinkedIn</a>
+        </div>
+      </nav>
+
+      <div id="main-page">
+        <div id="project-page-container">
+            <div class="logo">
+                <nav class="back">
+                    <a href="/pages/projects.html"><img src="/assets/img/arrow-back.png" alt=""></a>
+                </nav>
+                <img class="logo-img" src="/assets/img/bluecollar-logo.png">
+            </div>
+            <div class="content">
+                <nav class="text">
+                    <h2>BlueCollar</h2>
+                    <p>BlueCollar is a website for shoes. The project consist of <bg>research and high-fidelity prototype</bg>entirely focusing on UX and UI.</p>
+                    <p>This is an <bg>individual project</bg> that was part of my studies during semester 2.</p>
+                </nav>
+                <nav class="button">
+                    <a href=""><button>Open in AdobeXD <img src="/assets/img/arrow.png"></button></a>
+                </nav>
+            </div>
+        </div>
+      </div>
+
+      <footer>Designing dreams, one pixel at a time.</footer>
     </div>
-    <div class="content">
-        <nav class="text">
-            <h2>BlueCollar</h2>
-            <p>BlueCollar is a website for shoes. The project consist of <bg>research and high-fidelity prototype</bg>entirely focusing on UX and UI.</p>
-            <p>This is an <bg>individual project</bg> that was part of my studies during semester 2.</p>
-        </nav>
-        <nav class="button">
-            <a href=""><button>Open in AdobeXD <img src="/assets/img/arrow.png"></button></a>
-        </nav>
-    </div>
-</div>
+
+  </body>
+</html>

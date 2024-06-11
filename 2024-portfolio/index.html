@@ -15,27 +15,15 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="background-image" data-select="image" data-id="1">
-      <img src="/assets/img/one.jpg">
-    </div>
-    <div class="background-image" data-select="image" data-id="1">
-      <img src="/assets/img/two.jpg">
-    </div>
-    <div class="background-image" data-select="image" data-id="1">
-      <img src="/assets/img/three.jpg">
-    </div>
-    <div class="background-image" data-select="image" data-id="1">
-      <img src="/assets/img/four.jpg">
-    </div>
     <div id="app">
       <nav id="main-nav" class="top-bar">
         <div class="home-buttons">
-        <a href="/" onclick="route()">Home</a>
+        <a href="/index.html" onclick="route()">Home</a>
         </div>
 
         <div class="pages-buttons">
-        <a href="/projects" onclick="route()">Projects</a>
-        <a href="/about" onclick="route()">About me</a>
+        <a href="/pages/projects.html" onclick="route()">Projects</a>
+        <a href="/pages/about.html" onclick="route()">About me</a>
         </div>
 
         <div class="socials-buttons">
@@ -44,12 +32,43 @@
         </div>
       </nav>
 
-      <div id="main-page"></div>
+      <div id="main-page">
+        <div id="home-page-container">
+          <nav class="home-page-content">
+              <div class="title">
+                  <h1 class="title-one">User experience</h1>
+                  <h1 class="title-two">designer</h1>
+              </div>
+      
+              <div class="paragraph">
+                  <p>I'm currently a student at <bg>Fontys University of Applied Sciences</bg> and I also work part-time as an <bg>UX/UI Designer</bg> at Sogelink. I have experience in mainly UX design but also in front-end development.</p>
+              </div>
+      
+              <div class="location">
+                  <p>Eindhoven, the Netherlands</p>
+              </div>
+      
+              <div class="information">
+                  <div class="experience">
+                      <h2><bg>8+ Months</bg></h2>
+                      <p>Experience as an UX/UI Designer.</p>
+                  </div>
+                  <div class="projects">
+                      <h2><bg>4+ Projects</bg></h2>
+                      <p>With clients as part of my studies.</p>
+                  </div>
+              </div>
+          </nav>
+          <nav class="home-page-photos">
+              <div class="box"> </div>
+              <a href="/pages/projects.html"><button>Projects <img src="/assets/img/arrow.png"></button></a>
+              <img id="home-photo" src="/assets/img/photo-home.png" alt="">
+          </nav>
+      </div>
+      </div>
 
       <footer>Designing dreams, one pixel at a time.</footer>
     </div>
 
-    <script src="js/router.js"></script>
-    <script type="module" src="/js/image-hover.js"></script>
   </body>
 </html>
