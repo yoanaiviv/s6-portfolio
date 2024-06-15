@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
-    border: 1px solid red;
+    overflow: hidden; 
+    
 }
 
 #app {
@@ -94,4 +94,27 @@ footer {
     height: 400px;
     width: 400px;
     object-fit: cover;
+}
+
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 20.18em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
+
+/* Animation */
+.anim-typewriter{
+  width:0;
+  /*animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;*/
 }

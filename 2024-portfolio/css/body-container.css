@@ -133,22 +133,33 @@ bg::before {
     width: 100%;
     height: 85%;
 
-    .box {
-        height: 300px;
+    .box{
+        height: 350px;
         width: 90%;
-        background-color: #F5D5ED;
         margin-bottom: 50px;
+        
+        img {
+            height: auto;
+            width: auto;
+        }
     }
     
     #home-photo {
-        position: fixed;
+        position: absolute;
         top: -30%;
         left: 11%;
         width: 100%;
         height: auto;
         background-color: transparent;
         z-index: 0;
+        animation-name: homephoto;
+        animation-duration: 4s;
     }
+
+    @keyframes homephoto {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+      }
 }
 
 /*Content Projects Page*/
@@ -302,4 +313,5 @@ bg::before {
         }
     }
 }
+
 
