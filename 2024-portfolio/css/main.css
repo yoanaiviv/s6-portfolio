@@ -23,38 +23,59 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;  
-    height: 5%;                    
-    border-bottom: 1px solid #2D2D2D; 
+    width: 90%;
+    height: 5%;
+    border-bottom: 1px solid #2D2D2D;
+}
 
-    a {
-        text-decoration: none;
-        color: #2D2D2D;
-        z-index: 1;
+#main-nav a {
+    text-decoration: none;
+    color: #2D2D2D;
+    z-index: 1;
+    display: inline-block;
+    transition: transform 0.5s ease-out;
+}
+
+#main-nav a:hover {
+    transform: scale(1.1);
+    animation: shake 0.3s ease-in-out infinite alternate;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotateZ(-2deg);
     }
-
-    .home-buttons {
-        width: 33%;
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .pages-buttons {
-        width: 33%;
-        display: flex;
-        justify-content: center;
-
-        a {margin: 0 10px 0 10px;}
-    }
-    
-    .socials-buttons {
-        width: 33%;
-        display: flex;
-        justify-content: flex-end;
-
-        a {margin-left: 20px;}
+    100% {
+        transform: rotateZ(2deg);
     }
 }
+
+.home-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pages-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+
+.pages-buttons a {
+    margin: 0 10px;
+}
+
+.socials-buttons {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socials-buttons a {
+    margin-left: 20px;
+}
+
 
 
 /*Body styles*/
@@ -78,10 +99,10 @@ footer {
 
 .background-image {
     position: fixed;
-    top: -200px;
-    left: -200px;
-    width: 400px;
-    height: 400px;
+    top: -77.5px;
+    left: -226.5px;
+    width: 453px;
+    height: 255.1px;
     pointer-events: none;
     z-index: -1;
 }
@@ -91,8 +112,8 @@ footer {
     top: 0;
     left: 0;
 
-    height: 400px;
-    width: 400px;
+    height: 255.1px;
+    width: 453px;
     object-fit: cover;
 }
 

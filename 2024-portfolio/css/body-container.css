@@ -45,9 +45,16 @@ button {
     padding: 10px;
     font-family: "Lato", sans-serif;
     font-size: 16px;
-    background-color: #f8f8f8;
     color: #2D2D2D;
+    background-color: #f8f8f8;
     z-index: 1;
+    overflow: hidden; 
+
+    
+    background-image: linear-gradient(to right, #f8f8f8 50%, #F5D5ED 50%);
+    background-size: 200% 100%; 
+
+    transition: background-position 0.5s; 
 
     img {
         height: 16px;
@@ -58,7 +65,10 @@ button {
 
 button:hover {
     cursor: pointer;
+    background-position: 100% 0; 
 }
+
+
 
 /*Background text effect*/
 
