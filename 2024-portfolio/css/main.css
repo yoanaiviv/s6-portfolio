@@ -28,6 +28,11 @@ body {
     border-bottom: 1px solid #2D2D2D;
 }
 
+#main-nav img {
+    width: 25px;
+    height: auto;
+}
+
 #main-nav a {
     text-decoration: none;
     color: #2D2D2D;
@@ -43,10 +48,10 @@ body {
 
 @keyframes shake {
     0% {
-        transform: rotateZ(-2deg);
+        transform: rotateZ(-3deg);
     }
     100% {
-        transform: rotateZ(2deg);
+        transform: rotateZ(3deg);
     }
 }
 
@@ -73,7 +78,7 @@ body {
 }
 
 .socials-buttons a {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 

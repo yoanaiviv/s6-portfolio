@@ -162,14 +162,17 @@ bg::before {
         height: auto;
         background-color: transparent;
         z-index: 0;
-        animation-name: homephoto;
-        animation-duration: 4s;
+        animation: fadein 0.3s ease-out infinite alternate;
     }
 
-    @keyframes homephoto {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
-      }
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 }
 
 /*Content Projects Page*/
