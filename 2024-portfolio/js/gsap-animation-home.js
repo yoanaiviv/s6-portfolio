@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const animationConfig = {
       h1: {
           typeIn: {
-              duration: 0.05,
+              duration: 0.5,
               stagger: 0.05,
               delay: 0.5
           }
@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
           h2: {
               x: -200,
               opacity: 0,
-              duration: 1,
-              delay: 0.2,
+              duration: 1.5,
+              delay: 0.1,
               ease: "power2.out"
           },
           h3: {
