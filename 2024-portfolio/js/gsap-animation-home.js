@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     gsap.to("#home-photo", {
         opacity: 1,
-        duration: 1,
+        duration: 2,
         y: "-45%", 
         ease: "power2.inOut"
     });
