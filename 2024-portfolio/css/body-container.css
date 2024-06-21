@@ -156,13 +156,13 @@ bg::before {
     
     #home-photo {
         position: absolute;
-        top: -30%;
+        top: 100%; /* Start below the view */
         left: 11%;
         width: 100%;
         height: auto;
         background-color: transparent;
         z-index: 0;
-        animation: fadein 0.3s ease-out infinite alternate;
+        opacity: 0; /* Ensure initial opacity is 0 */
     }
 
     @keyframes fadein {
@@ -324,6 +324,11 @@ bg::before {
                 background-color: transparent;
             }
         }
+    }
+
+    video {
+        width: 100%;
+        height: auto;
     }
 }
 

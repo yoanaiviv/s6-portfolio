@@ -1,4 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
+
+    gsap.to("#home-photo", {
+        opacity: 1,
+        duration: 1,
+        y: "-45%", 
+        ease: "power2.inOut"
+    });
+
   // Configuration object
   const animationConfig = {
       h1: {
